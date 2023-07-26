@@ -9,22 +9,23 @@ Caso seja inserido um número de operação que não exista, o resultado deverá
 
 function calculadora(n1, n2, operacao) {
     if (operacao == 0) {
-        console.log(0);
+        return console.log(0);
     }
     else if (operacao == '+') {
-        console.log(n1 + n2);
+        return console.log(n1 + n2);
     }
     else if (operacao == '-') {
-        console.log(n1 - n2);
+        return console.log(n1 - n2);
     }
     else if (operacao == '/') {
-        console.log(n1 / n2);
+        return console.log(n1 / n2);
     }
     else if (operacao == '*') {
-        console.log(n1 * n2);
+        return console.log(n1 * n2);
     }
 }
 
+//testes
 console.log('Exemplo soma: '); calculadora(10, 2, '+');
 console.log('Exemplo subtração: '); calculadora(10, 2, '-');
 console.log('Exemplo multiplicação: '); calculadora(10, 2, '*');
