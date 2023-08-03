@@ -31,9 +31,9 @@ function calcularMedia(notas) {
 let mediaAlunos = []; //novo array para receber as notas 
 
 //chamando for para pegar cada nota dos alunos e tirar a médida, depois add no array
-for(let i=0; i< notas.length; i++) {
-    let mediaAluno = calcularMedia(notas[i]);
-    mediaAlunos.push(mediaAluno);
-}
+// for(let i=0; i< notas.length; i++) {
+//     let mediaAluno = calcularMedia(notas[i]);
+//     mediaAlunos.push(mediaAluno);
+// }
 
 console.log(mediaAlunos);
