@@ -17,4 +17,13 @@ for(let i = 1; i<=3; i++) {
     animais.push([nome, especie, idade]);
 }
 
+//verificando o resultado da matriz
 console.log(animais);
+
+console.log("\nApresentação individual dos resultados: ");
+for(let i = 0; i < 3; i++){
+    let animalNome = animais[i][0];
+    let animalEspecie = animais[i][1];
+    let animalIdade = animais[i][2];
+    console.log(`Nome: ${animalNome}, Espécie: ${animalEspecie}, Idade: ${animalIdade}`);
+}
