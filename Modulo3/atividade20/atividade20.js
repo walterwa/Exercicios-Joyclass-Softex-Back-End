@@ -90,5 +90,3 @@ function desempilharPop() {
 
 desempilharPop();
 console.log(`Situação final da pilha com POP: ${pilha}`); //retorna []
-
-//remover com shift
