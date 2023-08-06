@@ -1,3 +1,5 @@
+//o array não está ordenado, logo a melhor solucao é a busca linear ou sequencial
+
 function buscaSequencial(umVetor, item) {
     let posicao = 0;
     let achouItem = false;
