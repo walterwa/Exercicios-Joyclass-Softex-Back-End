@@ -1,0 +1,26 @@
+Atividade 1 - Softex 
+Back End, turma 2
+Lógica de Programação
+
+Cabeçalho: Aristóteles, Sócrates e Platão estavam disputando uma competição de perguntas nas disciplinas de Física, Matemática e Química. Cada um obteve um primeiro lugar, um segundo lugar e um terceiro lugar.
+
+Sabendo que: 
+- Aristóteles não ficou em primeiro em Química; 
+- Sócrates perdeu para Platão em Física; 
+- Platão acertou mais que Aristóteles em Matemática.
+
+Informe quem ficou em 1º, 2º e 3º lugar em cada disciplina.
+
+Resolução:
+
+Aristóteles é o primeiro de física, pois ele não pode ser o primeiro de química e nem de matemática. 
+Se Platão ganhou de Sócrates em Física, mas não pode ser o primeiro lugar, resta a ele o segundo lugar de Física.
+Se Platão já foi o segundo lugar de física e ele não repetir a colocação, então para ele estar à frente de Aristóteles em Matemática, resta a ele ser o primeiro lugar em Matemática.
+
+Por consequência, só resta o primeiro lugar de química para Sócrates.
+
+
+Física     			 Química				Matemática
+1) Aristóteles       1) Sócrates    		1) Platão
+2) Platão  			 2) Aristóteles      	2) Sócrates
+3) Sócrates  		 3) Platão    			3) Aristóteles
