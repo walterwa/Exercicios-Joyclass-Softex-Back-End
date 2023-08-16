@@ -3,10 +3,7 @@ inserir 3 notas (0-10) pelo usuário e depois exibir com o resultado com o conso
 armazenar a média em variável de mesmo nome*/
 const prompt = require("prompt-sync")({ sigint: true });
 
-// let nota1 = Number;
-// let nota2 = Number; 
-// let nota3 = Number;
-let media;
+let media = Number;
 
 let nota1 = parseInt(prompt('Digite a primeira nota [0-10]: '));
 let nota2 = parseInt(prompt('Digite a primeira nota [0-10]: '));
