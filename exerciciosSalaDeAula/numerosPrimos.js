@@ -1,0 +1,1 @@
+//veificar números primos
