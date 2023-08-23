@@ -35,3 +35,18 @@ media = (nota1 + nota2 + nota3)/3
 
 console.log(media >= 7 ? 'Aprovado!' : 'Reprovado!');
 console.log(`\nMedia: ${media.toFixed(2)}`)
+
+
+//segunda parte
+//verificar duas notas e informar qual o mínimo da  terceira nota que ele deve tirar
+let nota4, nota5, nota6, mediaTemporaria
+
+
+console.log(`\nSegunda Parte do Exercício`)
+nota4 = promptInteiro("Digite a primeira nota: ", "Por favor, digite um valor válido: ");
+nota5 = promptInteiro("Digite a segunda nota: ", "Por favor, digite um valor válido: ");
+
+mediaTemporaria = (nota4 + nota5)
+nota6 =  21 - mediaTemporaria
+
+console.log(`Você precisa de uma nota: ${nota6} para ser aprovado por média.`)
