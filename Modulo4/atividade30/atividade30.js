@@ -10,7 +10,7 @@ por exemplo: um programa de calculadora*/
 const prompt = require('prompt-sync')();
 
 //Apresentação da calculadora
-const apresentação = () => `Para usar a calculadora você precisa digitar 2 números (um por vez) e um operador [+ - / *]`
+const apresentação = () => `Instruções:\nVocê precisa digitar 1 número, depois um operador [+ - / *] e, por fim, outro número.`
 
 console.log(apresentação())
 
@@ -27,8 +27,8 @@ function promptInt(mensagem, tenteNovamente) {
 //função para receber dados e fazer os calculos
 function calculadora() {
     let numero1 = promptInt('Número 1: ', "Por favor, digite um número.Tente outra vez: ")
-    let numero2 = promptInt('Número 2: ', "Por favor, digite um número.Tente outra vez: ")
     let operador = prompt('Digite o operador desejado [+ - / *]: ')
+    let numero2 = promptInt('Número 2: ', "Por favor, digite um número.Tente outra vez: ")
     console.log(`\nResultado: `)
     if(operador == '+') {
         return numero1 + numero2
