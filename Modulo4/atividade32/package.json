@@ -1,0 +1,17 @@
+{
+  "name": "atividade32",
+  "version": "1.0.0",
+  "description": "elaborando rotas e usando metodos",
+  "main": "atividade32.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
