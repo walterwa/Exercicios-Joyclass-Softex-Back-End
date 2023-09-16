@@ -15,7 +15,7 @@ function verificarNumero(x) {
             console.log(`ÍMPAR`);
         }
     } else {
-        console.log(`Você não pasosu um número inteiro`);
+        console.log(`Você não passou um número inteiro`);
     }
 }
 
