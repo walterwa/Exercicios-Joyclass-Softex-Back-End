@@ -11,7 +11,7 @@ def main():
     numeroComplexos()
     # parte real (a) e parte imaginária (bi)
     # formula:
-    #      z = a + bi, com a, b E R
+    #      z = a + bi
 
     print(f"Adição: {__adicao__()}")
     print(f"Subratação: {__subtracao__()}")
