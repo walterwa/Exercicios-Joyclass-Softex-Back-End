@@ -44,8 +44,6 @@ class Computador{
     }
 }
 
-//fazer class extends pc 
-//fazer class extends server
 
 class PC extends Computador {
     constructor(ram, hdd, cpu, type) {
