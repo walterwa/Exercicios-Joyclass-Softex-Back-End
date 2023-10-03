@@ -17,8 +17,8 @@ class AdaptadorPato {
         this.ave = ave;
         this.ave.nome = "Pato";
     }
-    emitirSom(som) {
-        console.log(som)
+    emitirSom() {
+        console.log(`Emitir som: Quack!`)
     }
     toString() {
         console.log(`A ave ${this.ave.nome} foi criada com sucesso`)
@@ -32,7 +32,7 @@ class AdaptadorPatoDemo {
         this.ave.nome = nome;
     }
     emitirSom(som) {
-        console.log(som)
+        console.log(`Emitir som: ${som}`)
     }
     toString() {
         console.log(`A ave ${this.ave.nome} foi criada com sucesso`)
@@ -43,7 +43,7 @@ class AdaptadorPatoDemo {
 //Pato
 const adaptadorPato = new AdaptadorPato(aves);
 adaptadorPato.toString();
-adaptadorPato.emitirSom("Quack");
+adaptadorPato.emitirSom();
 
 //galinha
 console.log('\n')
