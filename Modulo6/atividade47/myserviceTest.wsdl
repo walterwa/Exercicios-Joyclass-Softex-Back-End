@@ -1,0 +1,54 @@
+<definitions
+    name="MyService"
+    targetNamespace="http://localhost:8000/wsdl"
+    xmlns="http://schemas.xmlsoap.org/wsdl/"
+    xmlns:tns="http://localhost:8000/wsdl"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <types>
+        <xsd:schema targetNamespace="http://localhost:8000/wsdl">
+        <xsd:element name="MyFunction">
+            <xsd:complexType>
+                <xsd:sequence>
+                    <xsd:element name="name" type="xsd:string" />
+                        </xsd:sequence>
+                        </xsd:complexType>
+                        </xsd:element>
+                    <xsd: element name="MyFunctionResponse">
+                    <xsd:complexType>
+                    <xsd:sequence>
+                    <xsd: element name="message" type="xsd:string"/>
+                        </xsd:sequence>
+                        </xsd:complexType>
+                        </xsd:element>
+                        </xsd:schema>
+                    </types>
+                <message name="MyFunctionInput">
+                    <part name="parameters" element="tns:MyFunction" />
+                </message>
+                <message name="MyFunctionOutput">
+                    <part name="parameters" element="tns:MyFunctionResponse" />
+                </message>
+                <portType name="MyPort">
+                    <operation name="MyFunction">
+                        <input message="tns:MyFunctionInput" />
+                        <output message="tns:MyFunctionOutpu" />
+                    </operation>
+                </portType>
+                <binding name="MyBinding" type="tns:MyPort">
+                    <soap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http" />
+                    <operation name="MyFunction">
+                        <soap:operation soapAction="MyFunction" />
+                        <input>
+                            <soap:body use="encoded" namespace="http://localhost:8000/wsdl"  encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+                        </input>
+                        <output>
+                            <soap:body use="encoded" namespace="http://localhost:8000/wsdl" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+                        </output>
+                        </operation>
+                    </binding>
+                    <service name="MyService">
+                     <port name="MyPort" bingind="tns:MyBinding">
+                        <soap:address location="hptt://localhost:8000/wsdl" />
+                    </port>
+                    </service>
+                    </definitions>
