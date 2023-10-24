@@ -6,7 +6,7 @@ const conexao = mysql.createConnection({
     host: "localhost",
     port: 3306,
     user: "root",
-    password: //add senha ao rodar o código
+    password: "umaSenhaQualquer" //add senha correta antes de rodar o código
     database: "hotel"
 })
 
