@@ -3,3 +3,6 @@ node_modules
 
 # Ignore todos os arquivos de texto
 *.txt
+
+#Env
+*.env
